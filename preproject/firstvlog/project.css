@@ -1,0 +1,62 @@
+*{
+    font-family:  "Poppins", sans-serif;;
+}
+body{
+    background-color: rgb(246, 246, 238);
+    
+}
+.dir{
+    font-size: 25px;
+    background-color: rgba(26, 200, 26, 0.762);
+    color: white;
+    font-family: "Poppins", sans-serif;
+   
+}
+.dir p{
+    font-size: 25px;
+    color: yellow;
+}
+.cont{
+    background-color: white;
+}
+.cont h2{
+    color: blue;
+    font-size: 2rem;
+    font-family:  "Poppins", sans-serif;
+}
+.cont h3{
+    color: rgb(255, 81, 110);
+    font-size: 25px;
+
+}
+
+.third h2{
+    color: darkred;
+    font-size: 30px;
+}
+.third h3{
+    color: rgb(255, 81, 110);
+    font-size: 1.5rem;
+}
+.third{
+    background-color: white;
+}
+.table{
+    width: 100%;
+    background-color: rgb(235, 234, 233);
+}
+.table th{
+    background-color: rgb(88, 88, 238);
+    text-align: left;
+}
+.four{
+    background-color: white;
+}
+.four h2{
+    color: blue;
+    font-size: 2rem;
+}
+footer{
+    background-color: rgb(165, 162, 162);
+    font-weight: bold;
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* nav bar style */
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.text{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.navi button{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: 7vw;
+    border-radius: 0.5vw;
+    background-color: aquamarine;
+    margin: 0 2vw;
+    transition: 0.3s;
+}
+.navi button:hover{
+    transform: scale(1.1);
+}
+
+/* main section */
+a{
+    text-decoration: none;
+}
+.outer{
+    /* height: 100%; */
+    width: 80vw;
+    padding: 1vw;
+    padding: 1vw;
+    box-shadow: 0 0 10px 5px gray;
+    align-items: center;
+}
+.first-section{
+    display: flex;
+    /* border: 2px solid saddlebrown ; */
+    justify-content: space-between;
+    border:none;
+    width: 60vw;
+}
+img{ 
+    margin-top: 5px;
+    width: 18vw; 
+    border-radius: 1vw;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+    /* color: white; */
+    font-family: 'Arial Narrow', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+p{
+    margin-bottom: 10px;
+}
+.ex-out,.sec-in{
+    padding-left: 2px;
+    padding-top:5px; 
+    align-items: center; 
+    background-color:rgb(56, 68, 77);
+    height: 180px; 
+    border: 2px solid rgb(79, 52, 52);
+    margin-top:30px ;
+    border-radius: 10px;
+}
+.sec-in{ 
+    height: 120px;
+}
+.in{
+    margin-top: 10px;
+    padding-top:5px ;
+    background-color: #111111b0;
+    height: 30px;
+}
+.last button{
+    font-size: 0.8vw;
+    width: 6vw;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 5px; 
+}
+h2{
+    margin-top: 30px;
+    font-size: 2vw;
+}
+ 
+/* footer section */
+
+.last {
+    /* padding: 2vw; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.last button{
+    padding: 0.5vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(208, 146, 146);
+}
+.last button a{
+    text-decoration: none;
+    font-size: 0.8vw;
+    color: black;
+    text-transform: uppercase;
+}
+

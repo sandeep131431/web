@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 50vw;
+    width: 50vw;
+    background-color: blanchedalmond;
+}
+.container{
+    height: 80%;
+    width: 80%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 2px;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}

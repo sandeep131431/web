@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    /* border: 2px solid white; */
+}
+
+/* nav bar styling */
+
+.navi{
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+    width: 79%;
+    margin: auto;
+    border-left:  1px solid white;
+    border-right:  1px solid white;
+}
+
+.heading{
+    font-size: 2vw;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.navi button{
+    padding: 0.5vw;
+    width: 7vw;
+    font-size: 1.5vw;
+    color: black;
+    border-radius: 0.5vw;
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+.navi button:hover{
+    transform: scale(1.1);
+}
+
+/* main box styling */
+
+.outerbox {
+    /* height: 100%; */
+    margin-top: 2px;
+    padding-top: 2px;
+    /* height: 130vh; */
+    color: rgb(208, 146, 146);
+    margin: auto;
+    width: 79%;
+    border-left:  1px solid white;
+    border-right:  1px solid white;
+}
+.example h3{
+    margin-left: 8vw;
+}
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Arial Narrow', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    margin-left: 1vw;
+    margin-top: 20px;
+}
+.outerbox >ul{
+    margin-left: 2vw;
+}
+.last button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 40px;
+    width: 110px; */
+    height: 3rem;
+    width: 7rem;
+    background-color: rgba(165, 42, 42, 0.689);
+    color: rgb(43, 0, 255);
+    border-radius: 10px;
+
+}
+
+/* footer section styling */
+
+.last {
+    padding: 2vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.outerbox {
+    font-size: 1vw;
+}
+.last {
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.last button{
+    padding: 0.5vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(208, 146, 146);
+}
+.last button a{
+    text-decoration: none;
+    font-size: 0.8vw;
+    color: black;
+    text-transform: uppercase;
+}

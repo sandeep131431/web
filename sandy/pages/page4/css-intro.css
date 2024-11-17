@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/* nav styling */
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.text{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.navi button{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: 7vw;
+    border-radius: 0.5vw;
+    background-color: aquamarine;
+    margin: 0 2vw;
+    transition: 0.3s;
+    color: black;
+}
+.navi button:hover{
+    transform: scale(1.1);
+}
+.top h2 {
+    font-size: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+
+/* outer box */
+
+.outer {
+    width: 80%;
+    background-color: #111;
+    margin: auto;
+    padding: 1vw;
+    box-shadow: 0 0 10px 5px gray;
+    align-items: center;
+}
+.first {
+    padding: 0vw 2vw;
+    text-align: justify;
+}
+.third {
+    display: flex;
+    justify-content: center;
+}
+.second {
+    background-color: gray;
+    margin: 2vw;
+    border-radius: 1.5vw;
+    padding: 2vw;
+}
+.second h4 {
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+.img img {
+    height: 30vw;
+    padding: 0vw 2vw;
+    width: 100%;
+    border: none;
+    border-radius: 2vw;
+}
+/* footer section */
+.last {
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.last button {
+    padding: 0.5vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(208, 146, 146);
+}
+.last button a {
+    text-decoration: none;
+    font-size: 0.8vw;
+    color: black;
+    text-transform: uppercase;
+}

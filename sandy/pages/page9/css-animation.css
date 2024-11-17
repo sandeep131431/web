@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1vw;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    /* border: 2px solid paleturquoise; */
+}
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.text{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.navi button{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: 7vw;
+    border-radius: 0.5vw;
+    background-color: aquamarine;
+    margin: 0 2vw;
+    transition: 0.3s;
+    color: black;
+}
+.navi button:hover{
+    transform: scale(1.1);
+}
+
+.outer {
+    /* border-left : 1px solid ; */
+    /* box-shadow:   10px 5px 0px 0px gray; */
+    margin-top: 2px;
+    padding-top: 2px;
+    box-shadow: 0 0 10px 5px gray;
+    height: 130vh;
+    color: rgb(208, 146, 146);
+    margin: auto;
+    width: 80%;
+
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.header h1{
+    font-size: 2vw;
+    padding: 1vw;
+    text-transform: uppercase;
+}
+.first {
+    /* border: 2px solid; */
+    width: 100%;
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.first>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    border-radius: 20%;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgb(109, 118, 81);
+    width: 40px;
+    height: 40px;
+    animation-name: box;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes box {
+
+    from {
+        transform: translate(0%) rotate(0deg);
+        color: wheat;
+    }
+
+    to {
+        transform: translate(55vw) rotate(360deg);
+        color: white;
+    }
+
+}
+
+.box1 {
+    margin-left: 20px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.second {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.second>p {
+    margin-top: 20px;
+}
+
+.ex-out {
+    padding-left: 2px;
+    padding-top: 5px;
+    align-items: center;
+    background-color: rgb(56, 68, 77);
+    height: 40%;
+    /* border: 2px solid rgb(79, 52, 52); */
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ex-out>h2 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.last {
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.last button{
+    padding: 0.5vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(208, 146, 146);
+}
+.last button a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: black;
+    text-transform: uppercase;
+}

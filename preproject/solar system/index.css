@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 49vw;
+    width: 100vw;
+}
+.solar{
+    background-color:black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jupiter{
+   height: 900px;
+   width: 900px;
+   border: 3px dotted white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.erth{
+    height: 700px;
+    width: 700px;
+    border: 3px dotted white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .mars{
+    height: 400px;
+    width: 400px;
+    border: 3px dotted white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .sun{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    -webkit-box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 20px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .mar{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    animation-name: marr;
+    animation-duration: 7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ @keyframes marr {
+    from{
+        transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+ }
+ .eth{
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: ethh;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+ }
+ @keyframes ethh {
+    from{
+        transform: rotate(0deg) translate(350px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(350px) rotate(-360deg);
+    }
+ }
+
+ .jup{
+    height: 70px;
+    width: 70px;
+    background-color:red;
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: jupp;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ @keyframes jupp {
+    from{
+        transform: rotate(0deg) translate(450px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(450px) rotate(-360deg);
+    }
+ }
+

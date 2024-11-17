@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    color: white;
+}
+
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.text{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.navi button{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: 7vw;
+    border-radius: 0.5vw;
+    background-color: aquamarine;
+    margin: 0 2vw;
+    transition: 0.3s;
+    color: black;
+}
+.navi button:hover{
+    transform: scale(1.1);
+}
+
+.outer {
+    padding: 1vw; 
+    width: 80%;
+    margin: auto;
+}
+.header h1{
+    position: relative;
+    bottom: 1.4vw;
+    font-size: 3vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    font-family: monospace;
+}
+
+.first>img{
+    width: 100%;
+    border-radius: 20px;
+}
+.first p{
+    font-size: 1vw;
+}
+.second{
+    padding-left: 10px;
+    padding-top:5px; 
+    background-color:rgb(56, 68, 77);
+    /* height: 120px;  */
+    width: 100%;
+    /* border: 2px solid   rgb(79, 52, 52); */
+    /* margin-top:30px ; */
+  
+    border-radius: 10px;
+}
+.third ul{
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+.last {
+    /* padding: 2vw;  */
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.last button{
+    padding: 0.5vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(208, 146, 146);
+}
+.last button a{
+    text-decoration: none;
+    font-size: 0.8vw;
+    color: black;
+    text-transform: uppercase;
+}

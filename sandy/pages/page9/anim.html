@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="css-animation.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="navi">
+                <a href="../page8/css-color.html"> <button>Back</button></a>
+                <div class="text">CSS ANIMATIONS</div>
+                <a href="../../../index.html"><button>HOME</button></a>
+            </div><br><br><br>
+
+        </div>
+        <div class="first">
+            <p> CSS allows animation of HTML elements without using JavaScript!</p>
+            <div class="box1">
+                CSS
+            </div>
+            <p>In this chapter you will learn about the following properties:</p>
+            
+            <ul>
+                <li>@keyframes</li>
+                <li>animation-name</li>
+                <li>animation-duration</li>
+                <li>animation-delay</li>
+                <li>animation-iteration-count</li>
+                <li> animation-direction</li>
+                <li> animation-timing-function</li>
+                <li> animation-fill-mode</li>
+                <li> animation</li>
+            </ul>
+
+
+        </div>
+
+        <div class="second">
+            <h2>The @keyframes Rule</h2>
+            <p>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the
+                current style to the new style at certain times.</p>
+            <p>To get an animation to work, you must bind the animation to an element.</p>
+            <p>The following example binds the "example" animation to the &ltdiv&gt element. The animation will last for
+                4 seconds, and it will gradually change the background-color of the &ltdiv&gt element from "red" to
+                "yellow":&lt/p&gt
+        </div>
+
+        <div class="ex-out">
+            <h2>Example</h2>
+            <pre>
+    /* The animation code */
+
+    @keyframes example {
+        from {
+            background-color: red;
+        }
+        to {
+            background-color: yellow;
+        }
+    }
+
+    /* The element to apply the animation to */
+    
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+            </pre>
+        </div>
+        
+       <div class="last">
+        <button name="Hello">
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1">click to try</a>
+        </button>
+        <button>
+            <a href="#" class="but-text" >Quiz&raquo;</a>
+        </button>
+    </div>
+         
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+ 
+body{
+    background-color: #111;
+    color: white;
+}
+.outer {
+    /* height: 100%; */
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 0 10px 5px gray;
+    align-items: center;
+    padding: 1.3vw;
+}
+
+header h1{
+    text-align: center;
+    font-size: 2vw;
+}
+header p{
+    font-size: 1vw;
+}
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.text{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.navi button{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: 7vw;
+    border-radius: 0.5vw;
+    background-color: aquamarine;
+    margin: 0 2vw;
+    transition: 0.3s;
+    color: black;
+}
+.navi button:hover{
+    transform: scale(1.1);
+}
+
+.third>img{
+    width: 100%;
+}
+.fourth>img{
+    width: 100%;
+}
+p{
+    font-size: 0.8vw;
+    font-family:    monospace;
+}
+
+.last { 
+    padding : 2vw;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.last button{
+    padding: 0.5vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(208, 146, 146);
+}
+.last button a{
+    text-decoration: none;
+    font-size: 0.8vw;
+    color: black;
+    text-transform: uppercase;
+}

@@ -1,0 +1,851 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #111;
+}
+
+/* this is nav style line(19 to 87) */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #111;
+}
+.nav-part1 h1{
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-part1{
+    position: relative;
+    min-width: 77%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+    background-color: #111;
+    z-index: 10;
+    transition: all 0.2s linear;
+}
+.nav-ele{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 11vh;
+  align-items: center;
+
+}
+.tag a{
+    text-decoration: none;
+}
+.nav-ele h2:hover{
+    color: aliceblue;
+    border-bottom: 3px solid red;
+}
+.nav-ele h2{
+  font-size: 1.3vw;
+  position: relative;
+  padding: 0.5vw;
+  border-radius: 1vw;
+  color: rgb(197, 188, 188);
+}
+nav button{
+    height: 3vw;
+    font-size: 2vw;
+    width: 3vw;
+    position: relative;
+    background-color: rgb(40, 205, 40);
+    border-radius: 50px;
+    border: none;
+    font-size: 1vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0vw 1.3vw;
+    animation: face;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes face {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+    background-color: red;
+  }
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-bars{
+    padding: 2vw;
+    font-size: 3vw;
+    position: absolute;
+    right: 0;
+    top: 0.1vw;
+    opacity: 0;
+}
+
+
+/* this is page one which is main section line(87 to 165) */
+#page1{
+    height:100%;
+    width: 100vw;
+    padding: 3vw;
+    position: relative;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#page1 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+#page1 h1 svg{
+    height: 5vw;
+    width: 5vw;
+    background-color: green;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+}
+#moving-div{
+    position: relative;
+
+    bottom: -1vw;
+    display: flex;
+    width: 50vw;
+    height: 2vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#moving-div .move{
+    display: flex;
+    align-items: center;
+    animation: bobo;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+#moving-div .move img{
+    margin: 0 1vw; 
+}
+.left{
+  position: absolute;
+  z-index: 4;
+  background: linear-gradient(to right,#111,transparent);
+  height: 51px;
+  width: 100px;
+}
+.right{
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    background: linear-gradient(to right,transparent,#111);
+    height: 51px;
+    width: 100px;
+  }
+@keyframes bobo{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+#page1 p{
+    font-size: 1.4vw;
+    width: 80%;
+    font-weight: bold;
+    text-align: center;
+    margin: 3vw;
+}
+
+
+/* three tage after moving bar */
+.mov{
+    height: 10vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+.page1-some button{
+    color: black;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border-radius: 1.5vw;
+   
+}
+.page1-some :nth-child(3){
+    border: none;
+    background-color: #111;
+    color: white;
+}
+
+
+/* previous project section */
+.project{
+    background-color:#111;
+    text-align: center;
+}
+.project h2{
+    margin-top: 2vw;
+    display: inline;
+    font-size: 3vw;
+}
+
+
+/* page 2 under previous project  line(205 to 298)*/
+#page2{
+    height: 80%;
+    width: 100%; 
+    position: relative;
+    background-color: #111;
+    padding: 0vw 11vw;
+    display: flex;
+    justify-content: space-between;
+}
+.page2-left{
+    height: 80vh;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 0;
+    margin-top: 1vw;
+    
+}
+.page2-left p{
+    font-size: 2vw;
+    font-weight: 500;    
+}
+.page2-left h5{
+    font-size: 1.1vw;
+    width: 64%;
+    font-weight: 400;
+}
+.page2-right{
+    height: 70%;
+    width: 60%;
+    position: relative;
+    margin: 2vw 0;
+    padding-left:2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid gray;
+}
+.outerbox{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.outerbox h2{
+    font-size: 1.8vw;
+    width: 100%;
+}
+.page2-elem{
+    margin-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30vw;
+   
+}
+.page2-right img{
+    height: 8vw;
+    width: 8vw;
+    object-fit: cover;
+    border-radius: 1vw;
+    transition: all 1s ease;
+    position: relative;
+    top: 1vw;
+    
+}
+.page2-right img:hover{
+   transform: scale(3);
+   z-index: 10;
+}
+.page2-elem button{
+    padding: 5px 10px;
+    width: 10vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    font-size: 1vw;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: aqua;
+    box-shadow: 0 0 10px 10px white;
+    animation: butu 5s linear infinite alternate-reverse;
+ 
+}
+.imgs{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+@keyframes butu {
+    0%{
+        box-shadow: 0 0 10px 10px white;
+    }
+    100%{
+        
+        box-shadow: 0 0 10px 10px rgb(22, 10, 100)
+    }
+    
+}
+
+
+/* vedio which is parsent on page3 line(309 to 327)*/
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#page3 video{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    object-fit: fill; 
+    padding: 3vw;
+    border-radius: 5vw;
+   
+}
+
+
+/* hear i float proparty use */
+.page4{
+    height: 100%;
+    width: 100%;
+    padding-top: 1vw;
+    background-color: #111;
+    position: relative;
+  }
+.ani{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #111;
+
+  }
+.ani h2{
+    position: relative;
+    font-size: 3vw;
+    word-spacing: 210px;
+    color: #252839;
+    -webkit-text-stroke: 0.1vw #383d52;
+}
+.ani h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    color: white;
+    border-right: 2px solid #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    overflow: hidden;
+    animation: histo 10s linear infinite;
+}
+@keyframes histo {
+    0%{
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
+.html-his img{
+    float: right;
+    height: 40vh;
+    width: 30vw;
+    margin-left: 3vw;
+    border-radius: 2vw;
+    transition: all 3s;
+}
+.html-his{
+    margin: 0vw 3vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    text-align: justify;
+}
+.html-his p{
+    margin-left: 0vw;
+    font-size: 1vw;
+   
+    padding-top: 2vw;
+}
+.html-his img:hover{
+    transform: scale(0.8);
+}
+.css-his img{
+    float: left;
+    height: 40vh;
+    width: 30vw;
+    margin-right: 3vw;
+    border-radius: 2vw;
+    transition: all 3s;
+}
+.css-his p{
+    margin-right: 0vw;
+    font-size: 1vw;
+    padding-top: 2vw;  
+}
+.css-his{
+    margin:  0vw 3vw;
+    text-align: justify;
+}
+.css-his img:hover{
+    transform: scale(0.8);
+}
+
+/*  fotter section line(430 to 573) */
+.footer{
+    min-height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #252839;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+/* address section line(442 to 523) */
+.contect{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+.contect p{
+    text-align: center;
+    width: 70%;
+    margin-top: 2vw;
+}
+.anime{
+    background: #252839;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+.anime h2{
+    margin: 0;
+    font-size: 3vw;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+.anime h2:before{
+    content: '';
+    position: absolute;
+    font-weight: 800;
+    left: 250%;
+    width: 250%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%,#252839 5%,#252839 100%);
+    animation: anmate 2s linear infinite 0s alternate-reverse ;
+}
+@keyframes  anmate{
+    0%{
+        left: 250%;
+    }
+    100%{
+        left: -20%;
+    }
+    
+}
+.anime h2 span{
+    color: red;
+}
+.boxi{
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 2vw 10vw;
+    display: flex;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vw;
+   
+   
+}
+.smallbox{
+    /* padding-top: 0.7vw; */
+    display: flex;
+}
+.icon{
+    background-color: gray;
+    height: 3vw;
+    width: 3vw;
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+.address{
+    height: 7vw;
+}
+.address h2{
+    color: aqua;
+    margin-bottom: 0.5vw;
+    font-size: 2vw;
+}
+
+
+/* contect form */
+.contecform{
+    background-color: rgba(245, 245, 245, 0.443);
+    height: 100%;
+    padding: 1vw;
+    width: 30vw;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px 10px;
+    background-color: rebeccapurple;
+  
+}
+.inputbox{
+    margin-top: 0.5vw;
+}
+.contecform h2{
+    font-size: 2vw;
+    color: black;
+
+}
+.contecform label{
+    color: black;
+    font-size: 1vw;
+}
+.contecform input{
+    border: none;
+    height: 1.5vw;
+    width: 20vw;
+    border: none;
+    color: black;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.contecform textarea{
+    border: none;
+    height: 3vw;
+    width: 20vw;
+    border: none;
+    color: black;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.contecform button{
+    height: 2vw;
+    background-color: aqua;
+    width: 10vw;
+    border-radius: 1vw;
+    border: none;
+    font-size: 1vw;
+    color: black;
+}
+
+
+/* media quary for website to make website responsive */
+
+@media (max-width:500px){
+    .nav-ele{
+        position: relative;
+        top:-1vw;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-ele h2{
+        font-size: 2vw;
+    }
+    .nav-part1{
+        padding-top: 3vw;
+        align-items: start;
+        justify-content: space-evenly;
+        height: 16vh;
+    }
+}
+@media (max-width:564px){
+
+    .anime h2{
+        font-size: 7vw;
+    }
+    .boxi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        height: 40vh;
+        justify-content: space-evenly;
+        font-size: 3vw;
+        width: 100%;
+      
+        border-radius: 2vw;
+      
+        
+    }
+    .icon{
+        background-color: gray;
+        height: 5vw;
+        width: 5vw;
+        margin-right: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        
+    }
+    .smallbox{
+        display: flex;
+        align-items: center;
+        margin-left: 6vw;
+        height: 10vh;
+    }
+    
+    .contecform{
+        height: 35vh;
+        width: 100%;
+        margin-top: 2vw;
+        box-shadow: 0 0 5px 5px red;
+        margin-bottom: 5vw;
+    }
+    .contecform h2{
+        font-size: 5vw;
+    }
+    
+    .contecform label{
+       
+        font-size: 2.5vw;
+    }
+    .contecform input{
+        border: none;
+        height: 1.5vw;
+        width: 30vw;
+        border: none;
+        color: black;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+        outline: none;
+    }
+    .contecform textarea{
+        border: none;
+        height: 3vw;
+        width: 30vw;
+        border: none;
+        color: black;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+        outline: none;
+    }
+    .contecform button{
+        height: 4vw;
+        background-color: aqua;
+        width: 20vw;
+        border-radius: 1vw;
+        border: none;
+        font-size: 3vw;
+        color: black;
+    }
+    
+}
+@media (max-width:600px){
+    .page2-left{
+      display: none;  
+    }
+    .page2-right{
+        border: none;
+        width: 100%;
+    }
+
+    @keyframes butu {
+        0%{
+            box-shadow: 0 0 5px 5px white;
+        }
+        100%{
+            
+            box-shadow: 0 0 5px 5px rgb(22, 10, 100)
+        }
+        
+    }
+    .page2-elem button{
+        font-size: 2vw;
+        width: 20vw;
+    }
+    .outerbox h2{
+        font-size: 2vw;
+        width: 100%;
+    }
+    #page3{
+        margin-top: 5vw;
+        height: 60vw;
+    }
+    #page3 video{
+        height: 80vw;
+        padding: 3vw;
+        border-radius: 5vw;
+    }
+    
+    .html-his{
+        display: flex;
+        flex-direction: column;
+    }
+    .html-his img{
+        width: 90%;
+        margin: auto;
+    }
+    .html-his p{
+        width: 90%;
+        margin: auto;
+    }
+    .css-his{
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+    }
+    .css-his img{
+        width: 90%;
+        margin: auto;
+    }
+    .css-his p{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width:400px){
+    .fa-bars{
+        opacity: 1;
+    }
+    .but{
+        opacity: 0;
+    }
+    .nav-ele{
+        opacity: 0;
+    }
+    .nav-part1{
+        height: 9vw;
+    }
+    .imgs{
+        display: none;
+    }
+    .page2-elem{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    @keyframes butu {
+        0%{
+         box-shadow: 0 0 0 0 red;  
+        }
+        100%{
+            
+            box-shadow: 0 0 0px 0px rgb(22, 10, 100)
+        }
+        
+    }
+    .page2-elem button{
+        font-size: 2vw;
+        width: 30vw;
+    }
+    .outerbox h2{
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .project{
+        margin-bottom: 2vw;
+    }
+    #page3{
+        height: 70vw;
+    }
+    #page3 video{
+        height: 70vw;
+        padding: 3vw;
+        border-radius: 5vw;
+    }
+    
+    .html-his{
+        display: flex;
+        flex-direction: column;
+    }
+    .html-his img{
+        width: 90%;
+        margin: auto;
+    }
+    .html-his p{
+        font-size: 2.5vw;
+        width: 90%;
+        margin: auto;
+    }
+    .css-his{
+        display: flex;
+        flex-direction: column;
+    }
+    .css-his img{
+        width: 90%;
+        margin: auto;
+    }
+    .css-his p{
+        font-size: 2.5vw;
+        width: 90%;
+        margin: auto;
+    }
+    .ani{
+       
+        height: 12vh;
+    }
+    .ani h2{
+        font-size: 5vw;
+    }
+}
+
+
+
+

@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #111;
+}
+.nav-part1 h1{
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top:0;
+}
+.nav-part1{
+    position: relative;
+    min-width: 77%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border-bottom: 1px solid white; */
+    background-color: #111;
+    z-index: 10;
+    transition: all 0.2s linear;
+}
+.nav-ele{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 11vh;
+  align-items: center;
+
+}
+.tag a{
+    text-decoration: none;
+}
+.nav-ele h2:hover{
+    color: aliceblue;
+    border-bottom: 3px solid red;
+}
+.nav-ele h2{
+  font-size: 1.3vw;
+  position: relative;
+  padding: 0.5vw;
+  border-radius: 1vw;
+  color: rgb(197, 188, 188);
+}
+nav button{
+    height: 2.5vw;
+    font-size: 2vw;
+    width: 9vw;
+    position: relative;
+    background-color: rgb(40, 205, 40);
+    border-radius: 50px;
+    border: none;
+    font-size: 1vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0vw 1.3vw;
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-bars{
+    padding: 2vw;
+    font-size: 3vw;
+    position: absolute;
+    right: 0;
+    top: 0.1vw;
+    opacity: 0;
+}
+
+.cont{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    box-shadow: 0 0 10px 10px gray;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cont h1{
+    font-size: 5vw;
+}
+.box a{
+    text-decoration: none;
+}
+.html:hover{
+    border-bottom: 0.4vw solid whitesmoke;
+    transform: scale(1.1);
+}
+.css:hover{
+    border-bottom: 0.4vw solid white;
+    transform: scale(1.1);
+}
+.html{
+    height: 8vh;
+    background-color:gray;
+    width: 40vw;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    margin: 3vw;
+    font-weight: 800;
+    border-radius: 3vw;
+    transition: all 0.4s;
+}
+.css{
+    height: 8vh;
+    margin:3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 800;
+    font-size: 3vw;
+    background-color: gray;
+    border-radius: 3vw;
+    width: 40vw;
+    transition: all 0.4s;
+}
